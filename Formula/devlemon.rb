@@ -1,26 +1,26 @@
 class Devlemon < Formula
   desc "The intelligent, context-aware disk cleanup tool built for developers and the AI era"
   homepage "https://github.com/iiwish/devlemon"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/iiwish/devlemon/releases/download/v#{version}/devlemon-v#{version}-darwin-arm64.tar.gz"
-      sha256 "7e018dbb1c0e8fa8d1d73e56b528423f7ed720d67594786af742ad95daf098bd"
+      sha256 "3038d3e1ab8b78144162356ff50dd78e120ec4be71e996e6d0710da2e77e3271"
     else
       url "https://github.com/iiwish/devlemon/releases/download/v#{version}/devlemon-v#{version}-darwin-amd64.tar.gz"
-      sha256 "3101518a0830706df64711b3d82b7bb79ad3c45796bc10878b8606a856db0a77"
+      sha256 "fff58e166ab7efcb7c9a566b3d11720dc0a570f53a4b9c0ab5a86d4f3ca16789"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/iiwish/devlemon/releases/download/v#{version}/devlemon-v#{version}-linux-arm64.tar.gz"
-      sha256 "1e6fd6538265fd3ce8d85fb0c5f3e0876cd5031f6d580df30171031fdeb71652"
+      sha256 "b7bd84d467504ac1bae022b3db556e81d20ca162fb430d3d1ee759e3932f33e1"
     else
       url "https://github.com/iiwish/devlemon/releases/download/v#{version}/devlemon-v#{version}-linux-amd64.tar.gz"
-      sha256 "4fd837d7c1956889bcd6b2d320ec551d815fc19363b1aa11d9eb4971911eb467"
+      sha256 "2b833afde58f758d6043c73acdd19e0dea84c93fd2939d359184fb92898a5963"
     end
   end
 
