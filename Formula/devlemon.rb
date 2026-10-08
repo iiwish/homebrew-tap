@@ -26,6 +26,7 @@ class Devlemon < Formula
 
   def install
     bin.install "devlemon"
+    bin.install_symlink "devlemon" => "dl"
   end
 
   test do
